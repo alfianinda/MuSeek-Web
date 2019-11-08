@@ -1,0 +1,39 @@
+.event-detail {
+  .container {
+    .r-detail-event {
+      padding: 13rem 0;
+      background-image: url("../images/envelop.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      margin: auto;
+      .de-wrapper {
+        .de-content {
+          text-align: center;
+          // background-color: wheat;
+          padding: 0rem 0;
+          .de-header {
+            margin-top: 1rem;
+            font-size: 2rem;
+            color: black;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+          .de-h5 {
+            text-transform: capitalize;
+            padding: 0.3rem 0;
+            .de-span {
+              background-color: yellow;
+              padding: 0.5rem 1rem;
+            }
+          }
+        }
+        .btn-de {
+          display: flex;
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
+}

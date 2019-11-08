@@ -1,0 +1,44 @@
+@import "theme_color";
+
+.product-topbar .total-products p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+.product-topbar .total-products .view a:first-child {
+  background-color: $head-button;
+}
+
+.product-topbar .product-sorting p {
+  margin-bottom: 0;
+  font-size: 14px;
+  height: 40px;
+  background-color: $bg-color;
+  line-height: 40px;
+  color: $text-color;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 20px;
+}
+
+.product-topbar .product-sorting form select {
+  background-color: $text-color;
+  border: none;
+  height: 40px;
+  width: 150px;
+}
+
+.flex-filter {
+  display: flex;
+  @media (max-width: 767.98px) {
+    display: block;
+  }
+}
+
+.margin-filter {
+  @media (max-width: 767.98px) {
+    margin-top: 10px;
+  }
+}

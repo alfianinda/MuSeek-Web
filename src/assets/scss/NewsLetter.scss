@@ -1,0 +1,47 @@
+@import "theme_color";
+
+.newsletter-area {
+  position: relative;
+  z-index: 1;
+  background-color: $bg-color;
+}
+
+.newsletter-area .newsletter-text h2 span {
+  color: $head-button;
+}
+
+.newsletter-area .newsletter-text p {
+  color: "bg-over";
+  margin-bottom: 0;
+}
+
+.newsletter-area .newsletter-form form input[type="email"] {
+  width: 100%;
+  height: 50px;
+  background-color: $text-color;
+  color: $bg-over;
+  font-size: 14px;
+  font-style: italic;
+  border: none;
+  padding: 0 30px;
+}
+
+.newsletter-area .newsletter-form form input[type="submit"] {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  height: 50px;
+  background-color: $head-button;
+  color: $bg-over;
+  font-size: 14px;
+  padding: 0 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  border: none;
+}
+
+.newsletter-area .newsletter-form form input[type="submit"]:hover {
+  background-color: $hover-color;
+}

@@ -1,0 +1,156 @@
+@import "./Variables";
+
+.edit {
+  width: 100%;
+  border: 1px solid $color-secondary-1;
+  border-radius: 5px;
+  background-color: $color-secondary-1;
+  padding: 5% 2%;
+  .edit-row {
+    text-align: start;
+    .edit-col-left {
+      text-transform: uppercase;
+      color: $color-dark-2;
+    }
+    .edit-title {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: white;
+    }
+    .edit-form {
+      position: relative;
+      margin: 10px auto 100px;
+      padding: 10px 0;
+      text-align: start;
+      .edit-p {
+        text-transform: uppercase;
+        color: $color-dark-2;
+        font-size: 15px;
+        font-weight: 300;
+      }
+      .edit-gender {
+        display: flex;
+        color: $color-primary;
+        margin-bottom: 20px;
+        font-size: 12px;
+        .input-radio {
+          margin-left: 20px;
+        }
+      }
+      .input-form {
+        color: $color-dark-1;
+        outline: 1px;
+        background-color: $color-secondary-1;
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid $color-dark-1;
+        margin: 0 0 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 18px;
+        text-align: start;
+      }
+    }
+  }
+  .edit-button {
+    text-align: end;
+    .edit-btn {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .edit {
+    width: 100%;
+    border: 1px solid $color-secondary-1;
+    border-radius: 5px;
+    background-color: $color-secondary-1;
+    padding: 5% 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    .edit-row {
+      text-align: start;
+      .edit-col-left {
+        text-transform: uppercase;
+        color: $color-dark-2;
+      }
+      .edit-title {
+        margin-bottom: 60px;
+        font-size: 40px;
+      }
+      .edit-form {
+        position: relative;
+        margin: 0 auto 100px;
+        text-align: start;
+        .edit-p {
+          text-transform: uppercase;
+          color: $color-dark-2;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        .edit-gender {
+          display: flex;
+          color: $color-primary;
+          margin-bottom: 20px;
+          font-size: 18px;
+          .input-radio {
+            margin-left: 50px;
+          }
+        }
+        .input-form {
+          outline: 1px;
+          background-color: $color-secondary-1;
+          border-radius: 5px;
+          width: 90%;
+          border: 1px solid $color-dark-1;
+          margin: 0 0 15px;
+          padding: 15px;
+          box-sizing: border-box;
+          font-size: 18px;
+          text-align: start;
+        }
+      }
+      .edit-col-right {
+        .edit-skill {
+          margin: 105px 0;
+        }
+        .skill-btn-box {
+          margin: 20px 0;
+          .skill-btn {
+            margin: 5px;
+            // width:
+          }
+        }
+      }
+    }
+    .edit-button {
+      text-align: end;
+      .edit-btn {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.edit .edit-button.profil {
+  text-align: end;
+  padding-right: 50px;
+  @media (max-width: 767.98px) {
+    text-align: center;
+    padding-right: 0px;
+  }
+}
+
+.respon-table {
+  @media (max-width: 767.98px) {
+    margin-top: -110px;
+  }
+}
+
+.dstyle-btn.btn-profile {
+  @media (max-width: 767.98px) {
+    margin: 2px;
+  }
+}

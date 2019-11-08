@@ -1,0 +1,37 @@
+@import "theme_color";
+
+.edit .edit-row .edit-form .input-form.form {
+  width: 100%;
+}
+
+.edit .edit-row .edit-form .edit-p {
+  text-transform: uppercase;
+  color: $head-button;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: $text-color;
+}
+
+.edit .edit-button {
+  text-align: end;
+  padding-right: 180px;
+  @media (max-width: 767.98px) {
+    padding-right: 100px;
+  }
+}
+
+.respon-top {
+  @media (max-width: 767.98px) {
+    margin-top: -120px;
+  }
+}
+
+.swal-button {
+  background-color: $head-button;
+  color: $bg-over;
+}

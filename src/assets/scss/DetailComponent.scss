@@ -1,0 +1,114 @@
+@import "./Variables.scss";
+
+.detail-wrapper {
+  margin: auto;
+  padding: 2rem 0 3rem;
+  .container {
+    .detail {
+      .row {
+        .detail--col-left {
+          // height: 45rem;
+          padding: 2rem 0rem;
+          box-shadow: 0.1rem 0.1rem 0.1rem $color-secondary-2-1;
+          height: 100%;
+
+          .detail--col-tittle {
+            background-color: $color-primary-2;
+            padding: 1rem 0.2rem;
+            border-top-right-radius: 4rem;
+            border-bottom-right-radius: 4rem;
+            margin: 0 0 2rem;
+            width: 70%;
+            .detail--col-tittle-header {
+              text-align: start;
+              text-transform: uppercase;
+              font-size: 1.4rem;
+              margin: 0 0.8rem;
+              color: $color-secondary-2;
+            }
+          }
+          .detail--col-box {
+            .detail-p {
+              padding: 0 1rem;
+              .detail-sign {
+                font-size: 1.4rem;
+                margin: 0 0.5rem;
+                color: $color-primary-2;
+              }
+              .detail-sign-text {
+                font-size: 1.4rem;
+                margin: 0 0.5rem;
+                color: $color-primary-2;
+              }
+              .detail-sign-text.below {
+                margin-left: 50px;
+                color: $color-dark-1;
+              }
+            }
+          }
+        }
+        .detail--col-right {
+          height: 100%;
+          padding: 2rem 1rem;
+          box-shadow: 0.1rem 0.1rem 0.1rem $color-secondary-2-1;
+          height: 100%;
+          .detail--col-box {
+            display: flex;
+            flex-direction: row;
+            margin: 1rem 0;
+            .detail-fa {
+              font-size: 1.4rem;
+              margin: 0 0.5rem;
+              color: $color-primary-2;
+            }
+            .detail-sign-text {
+              display: flex;
+              flex-direction: row;
+              font-size: 1.4rem;
+
+              .detail-sign-genre {
+                text-transform: uppercase;
+                margin: 0 0.3rem;
+                height: 80%;
+                background: $color-primary-2;
+                border-radius: 2.3rem;
+                font-size: 0.85rem;
+                font-weight: 700;
+                padding: 0.5rem 1.4rem;
+                color: $color-secondary-3;
+              }
+            }
+            .detail-desc {
+              padding: 2rem 0.5rem;
+              box-shadow: 0.1rem 0.1rem 0.1rem $color-secondary-2-1;
+              width: 100%;
+              height: 18rem;
+              .detail-desc-tittle {
+                color: $color-primary;
+                text-transform: uppercase;
+                font-weight: 500;
+              }
+
+              .detail-desc-body {
+                color: $color-dark-1;
+                padding: 0 1rem;
+              }
+            }
+          }
+          .btn-tombol {
+            text-align: end;
+            margin-top: 3rem;
+            @media (max-width: 767.98px) {
+              text-align: center;
+            }
+          }
+        }
+        .dstyle-btn.btn-profile {
+          @media (max-width: 767.98px) {
+            margin: 2px;
+          }
+        }
+      }
+    }
+  }
+}

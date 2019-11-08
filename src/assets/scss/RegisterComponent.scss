@@ -1,0 +1,125 @@
+@import "./Variables";
+
+.r-regis--wrapper {
+  position: relative;
+  height: 100%;
+  background-image: linear-gradient(
+    90deg,
+    $color-secondary-3 50%,
+    $color-primary 50%
+  );
+  .container {
+    background-color: unset;
+    .r-regis {
+      .row {
+        .r-col-left {
+          padding: 2rem;
+          height: 45rem;
+          background-color: $color-primary;
+          .r-img {
+            margin: 2rem 0;
+            text-align: center;
+            .r-regis-span {
+              font-size: 10rem;
+            }
+          }
+          .r-h2 {
+            font-size: 1rem;
+            text-align: center;
+            margin: 2.62rem 0 8rem;
+            color: white;
+          }
+          .r-regis-btn {
+            margin: 2rem 0 1rem;
+            text-align: center;
+          }
+          .r-signin--form {
+            .r-regis-btn {
+              margin: 2rem 0 1rem;
+            }
+          }
+        }
+        .r-col-right {
+          padding: 2rem;
+          height: 45rem;
+          background-color: black;
+          .r-img {
+            margin: 2rem 0;
+            text-align: center;
+          }
+          .r-signin--form {
+            .r-regis-btn {
+              margin: 2rem 0 1rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .r-regis--wrapper {
+    position: relative;
+    height: 100%;
+    padding: 3rem 0;
+    background-image: linear-gradient(
+      90deg,
+      $color-secondary-3 50%,
+      $color-primary 50%
+    );
+    .container {
+      background-color: unset;
+      .r-regis {
+        padding: 7rem 8rem;
+        .row {
+          .r-col-left {
+            padding: 2rem;
+            height: 45rem;
+            background-color: $color-primary;
+            .r-img {
+              margin: 2rem 0;
+              text-align: center;
+              .r-regis-span {
+                font-size: 10rem;
+              }
+            }
+            .r-h2 {
+              font-size: 2rem;
+              text-align: center;
+              margin: 2.62rem 0 13.4rem;
+              color: white;
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+            .r-regis-btn {
+              margin: 2rem 0 1rem;
+              text-align: center;
+            }
+            .r-signin--form {
+              .r-regis-btn {
+                margin: 2rem 0 1rem;
+              }
+            }
+          }
+          .r-col-right {
+            padding: 2rem;
+            height: 45rem;
+            background-color: black;
+            .r-img {
+              margin: 2rem 0;
+              text-align: center;
+            }
+            .r-signin--form {
+              .r-regis-btn {
+                margin: 2rem 0 1rem;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+$color-primary: #ffee54;
+// $color-primary-2: #dbcf21;
+$color-primary-2: #ffee54;
+
+$color-secondary-1: #1a1a1d;
+$color-secondary-2: #383838;
+$color-secondary-2-1: #2e2929;
+$color-secondary-3: #000000;
+
+$color-dark-1: #ffffff;
+$color-dark-1-1: #f5deb3;
+// $color-dark-2: #ffa500;
+$color-dark-2: rgba(134, 134, 134, 0.7);
+
+// utility
+.tombol {
+  text-transform: uppercase;
+  background-color: $color-primary;
+  padding: 13px 18px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  &:hover {
+    background-color: $color-dark-2;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid $color-primary;
+  width: 10%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+
+.under-line::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid $color-primary;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+
+.Active {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    background-color: $color-primary;
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    &:hover {
+      background-color: $color-dark-2;
+      cursor: pointer;
+    }
+  }
+}

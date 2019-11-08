@@ -1,0 +1,23 @@
+.admin-wrapper {
+  // background-color:
+  height: 100%;
+  // margin: 2rem 1rem 4rem;
+  padding: 1rem 0rem;
+  text-align: center;
+  .admin-span:hover {
+    color: yellow;
+  }
+}
+
+@media (min-width: 992px) {
+  .admin-wrapper {
+    // background-color:
+    height: 100%;
+    // margin: 2rem 1rem 4rem;
+    padding: 5rem 5rem 2rem;
+    text-align: center;
+    .admin-span:hover {
+      color: yellow;
+    }
+  }
+}

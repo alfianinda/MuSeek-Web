@@ -1,0 +1,123 @@
+@import "./Variables";
+
+.r-signup--wrapper {
+  position: relative;
+  height: 100%;
+  background-image: linear-gradient(
+    90deg,
+    $color-secondary-3 50%,
+    $color-primary 50%
+  );
+  .container {
+    background-color: unset;
+    .r-signup {
+      .row {
+        .r-col-left {
+          padding: 2rem;
+          height: 40rem;
+          background-color: $color-primary;
+          .r-img {
+            margin: 2rem 0;
+            text-align: center;
+            .r-signup-span {
+              font-size: 10rem;
+            }
+          }
+          .r-h2 {
+            font-size: 1rem;
+            text-align: center;
+            margin: 8rem 0 2.62rem;
+            color: white;
+          }
+          .r-signup-btn {
+            margin: 2rem 0 1rem;
+            text-align: center;
+          }
+          .r-signin--form {
+            .r-signup-btn {
+              margin: 2rem 0 1rem;
+            }
+          }
+        }
+        .r-col-right {
+          padding: 2rem;
+          height: 40rem;
+          background-color: black;
+          .r-img {
+            margin: 2rem 0;
+            text-align: center;
+          }
+          .r-signin--form {
+            .r-signup-btn {
+              margin: 2rem 0 1rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .r-signup--wrapper {
+    position: relative;
+    height: 100%;
+    padding: 3rem 0;
+    background-image: linear-gradient(
+      90deg,
+      $color-secondary-3 50%,
+      $color-primary 50%
+    );
+    .container {
+      background-color: unset;
+      .r-signup {
+        padding: 7rem 8rem;
+        .row {
+          .r-col-left {
+            padding: 2rem;
+            height: 40rem;
+            background-color: $color-primary;
+            .r-img {
+              margin: 2rem 0;
+              text-align: center;
+              .r-signup-span {
+                font-size: 10rem;
+              }
+            }
+            .r-h2 {
+              font-size: 1rem;
+              text-align: center;
+              margin: 8rem 0 2.62rem;
+              color: white;
+            }
+            .r-signup-btn {
+              margin: 2rem 0 1rem;
+              text-align: center;
+            }
+            .r-signin--form {
+              .r-signup-btn {
+                margin: 2rem 0 1rem;
+              }
+            }
+          }
+          .r-col-right {
+            padding: 2rem;
+            height: 40rem;
+            background-color: black;
+            .r-img {
+              margin: 2rem 0;
+              text-align: center;
+            }
+            .r-signin--form {
+              .r-signup-btn {
+                margin: 2rem 0 1rem;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

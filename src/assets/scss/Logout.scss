@@ -1,0 +1,76 @@
+@import "./Variables";
+
+.logout {
+  text-align: center;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin: 0px;
+  .logout-box {
+    .logout-heading {
+      color: $color-dark-1;
+      font-weight: 400;
+      font-size: 20px;
+      margin-top: 50%;
+    }
+    .logout-p {
+      color: $color-dark-1;
+      margin-top: 30px;
+      font-size: 14px;
+      .logout-span {
+        text-transform: none;
+        font-weight: bold;
+        color: $color-dark-2;
+      }
+    }
+
+    .logout-btn {
+      margin-top: 40px;
+    }
+  }
+}
+
+.logout::after {
+  left: 0px;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+.logout-box {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .logout {
+    text-align: center;
+    .logout-box {
+      .logout-heading {
+        color: $color-dark-1;
+        font-weight: 400;
+        font-size: 60px;
+        margin-top: 20%;
+      }
+      .logout-p {
+        color: $color-dark-1;
+        margin-top: 30px;
+        font-size: 24px;
+        .logout-span {
+          color: $color-dark-2;
+        }
+      }
+
+      .logout-btn {
+        margin-top: 40px;
+      }
+    }
+  }
+}

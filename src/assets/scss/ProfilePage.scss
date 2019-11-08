@@ -1,0 +1,65 @@
+@import "theme_color";
+
+.picture-profile {
+  width: 400px;
+  height: 350px;
+  margin-bottom: 75px;
+  border: 1px solid $text-color;
+}
+
+.p-profile {
+  color: $text-color;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.main-content-wrapper
+  .cart-table-area
+  table
+  tbody
+  tr
+  td.width-profile-description {
+  border: none;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.button-right {
+  float: right;
+}
+
+.dstyle-btn.btn-profile {
+  border-radius: 30px;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.main-content-wrapper .cart-table-area.profile {
+  position: relative;
+  flex: 100%;
+  width: 100%;
+  max-width: 100%;
+  padding: 100px;
+}
+
+.dstyle-btn {
+  display: inline-block;
+  min-width: 160px;
+  height: 55px;
+  color: $bg-over;
+  border: none;
+  border-radius: 0;
+  padding: 0 7px;
+  font-size: 18px;
+  line-height: 56px;
+  background-color: $head-button;
+  font-weight: 400;
+}
+
+.dstyle-btn:hover {
+  background-color: $hover-color;
+}

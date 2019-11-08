@@ -1,0 +1,54 @@
+@import "./Variables";
+
+.service {
+  padding: 0px;
+  .service-box {
+    text-align: center;
+    background-color: black;
+    padding: 180px 0;
+    margin-top: -32px;
+    margin-bottom: -32px;
+    .service-heading {
+      font-weight: 400;
+      font-size: 25px;
+      color: white;
+    }
+    .service-text {
+      margin-top: 80px;
+      color: $color-dark-1;
+      font-size: 12px;
+      padding: 0 5px 0 5px;
+      .service-span {
+        color: $color-dark-2;
+      }
+    }
+    .service-btn {
+      margin-top: 40px;
+    }
+  }
+}
+
+// desktop version
+@media (min-width: 992px) {
+  .service {
+    padding: 0px;
+    .service-box {
+      text-align: center;
+      background-color: black;
+      padding: 250px 0;
+      margin-top: -32px;
+      .service-heading {
+        font-weight: 400;
+        font-size: 50px;
+      }
+      .service-text {
+        margin-top: 80px;
+        color: $color-dark-1;
+        font-size: 20px;
+        .service-span {
+          color: $color-dark-2;
+        }
+      }
+    }
+  }
+}

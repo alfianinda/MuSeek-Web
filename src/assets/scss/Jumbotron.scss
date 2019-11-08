@@ -1,0 +1,158 @@
+@import "./Variables";
+
+// utility
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+  background-color: $color-primary;
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  &:hover {
+    background-color: $color-dark-2;
+    cursor: pointer;
+  }
+}
+
+.frame-one {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  .jumbo-heading {
+    color: $color-dark-1;
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .jumbo-paragraf {
+    color: $color-dark-1;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
+  .jumbo-btn {
+    margin: 40px 10px;
+    width: 134.64px;
+  }
+}
+
+.frame-one::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.frame-one .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .frame-one {
+    margin-top: -100px;
+    .jumbo-heading {
+      margin-top: 300px;
+      font-size: 62px;
+      font-weight: 500;
+    }
+    .jumbo-paragraf {
+      font-size: 25px;
+    }
+  }
+  .jumbo-btn {
+    margin: 40px 10px;
+    width: 134.64px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    background-color: $color-primary;
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    &:hover {
+      background-color: $color-dark-2;
+      cursor: pointer;
+    }
+  }
+
+  .frame-one {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    .jumbo-heading {
+      color: $color-dark-1;
+      margin-top: 100px;
+      font-weight: 400;
+      font-size: 20px;
+    }
+    .jumbo-paragraf {
+      color: $color-dark-1;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    .jumbo-btn {
+      margin: 40px 10px;
+      width: 134.64px;
+    }
+  }
+
+  .frame-one::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    );
+    position: absolute;
+    bottom: 0;
+  }
+
+  .frame-one .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: 992px) {
+    .frame-one {
+      margin-top: -100px;
+      .jumbo-heading {
+        margin-top: 300px;
+        font-size: 62px;
+        font-weight: 500;
+      }
+      .jumbo-paragraf {
+        font-size: 25px;
+      }
+    }
+    .jumbo-btn {
+      margin: 40px 10px;
+      width: 134.64px;
+    }
+  }
+}
