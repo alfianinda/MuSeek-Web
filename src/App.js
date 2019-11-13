@@ -75,7 +75,7 @@ class App extends Component {
             layout={Navigate}
             auth={user}
           />
-          <Route path="/about" exact component={About} />
+          <AppRoute path="/about" exact component={About} layout={Navigate} auth={user} />
           <AppRoute
             path="/detail/:id"
             exact
