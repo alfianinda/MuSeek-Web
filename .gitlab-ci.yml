@@ -19,25 +19,24 @@ deploy-to-staging:
   stage: staging
   environment:
     name: staging
-    url: https://$STAGING.$DOMAIN
+    url: https://museek-staging.herokuapp.com
   script:
     - apt-get update -qy
     - apt-get install -y ruby ruby-dev rubygems-integration
     - gem install dpl
-    - dpl --provider=heroku --app=$STAGING --api-key=$HEROKU_API_KEY
+    - dpl --provider=heroku --app=museek-staging --api-key="0a52984d-7bdc-4be1-a877-6201dd39c453"
   only:
     - develop
-
-deploy-production:
-  type: deploy
-  stage: production
-  environment:
-    name: production
-    url: https://$PRODUCTION.$DOMAIN
-  script:
-    - apt-get update -qy
-    - apt-get install -y ruby ruby-dev rubygems-integration
-    - gem install dpl
-    - dpl --provider=heroku --app=$PRODUCTION --api-key=$HEROKU_API_KEY
-  only:
-    - master
+# deploy-production:
+#   type: deploy
+#   stage: production
+#   environment:
+#     name: production
+#     url: https://$PRODUCTION.$DOMAIN
+#   script:
+#     - apt-get update -qy
+#     - apt-get install -y ruby ruby-dev rubygems-integration
+#     - gem install dpl
+#     - dpl --provider=heroku --app=$PRODUCTION --api-key=$HEROKU_API_KEY
+#   only:
+#     - master
