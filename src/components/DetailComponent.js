@@ -92,7 +92,7 @@ class DetailComponent extends Component {
                         </span>
                         <div>
                           <p className="detail-sign-text below">
-                            {this.props.musician.address},{" "}
+                            {/* {this.props.musician.address},{" "} */}
                             {this.props.musician.city},{" "}
                             {this.props.musician.country}
                           </p>
@@ -201,7 +201,6 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  { getProfile, getMusicianDetail }
-)(withRouter(DetailComponent));
+export default connect(mapStateToProps, { getProfile, getMusicianDetail })(
+  withRouter(DetailComponent)
+);

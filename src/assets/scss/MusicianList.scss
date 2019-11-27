@@ -1,5 +1,11 @@
 @import "theme_color";
 
+.container {
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
 .single-product-wrapper .product-description {
   position: relative;
   z-index: 1;
@@ -61,6 +67,8 @@ i.circle {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   height: 220px;
+  object-fit: cover;
+  object-position: top;
   @media (max-width: 767.98px) {
     height: 210px;
   }
