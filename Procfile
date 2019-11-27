@@ -1,1 +1,1 @@
-web: yarn run start:staging
+web: node server.js
