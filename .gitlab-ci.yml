@@ -2,6 +2,7 @@ image: node:8.15.1
 
 stages:
   - build
+  - staging
   - production
 
 deploy-to-development:
@@ -12,6 +13,20 @@ deploy-to-development:
   except:
     - develop
     - master
+
+deploy-to-staging:
+  type: deploy
+  stage: staging
+  environment:
+    name: staging
+    url: https://$STAGING.$DOMAIN
+  script:
+    - apt-get update -qy
+    - apt-get install -y ruby ruby-dev rubygems-integration
+    - gem install dpl
+    - dpl --provider=heroku --app=$STAGING --api-key=$HEROKU_API_KEY
+  only:
+    - develop
 
 deploy-production:
   type: deploy
